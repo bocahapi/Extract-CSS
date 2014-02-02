@@ -1,4 +1,5 @@
 <?php
+ob_start();
 include ('class.php');
 
 if(isset($_POST['set'])){
@@ -8,6 +9,8 @@ $blue = new Blue_Crimson();
 $file = $_FILES['upload'];
 
 $act  = $_POST['set'];
+
+ob_clean();
 
 }?>
 <html>
